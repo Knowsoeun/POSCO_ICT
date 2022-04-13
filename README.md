@@ -1,1 +1,1 @@
-# posco_it
+# POSCO ICT_IT
