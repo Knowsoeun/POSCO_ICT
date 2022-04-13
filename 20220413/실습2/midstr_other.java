@@ -1,5 +1,5 @@
 package prac;
-import java.util.Scanner;
+import java.util.Scanner; //Scanner 클래스 이용
 public class midstr_other {
 
 	public static void main(String[] args) {
