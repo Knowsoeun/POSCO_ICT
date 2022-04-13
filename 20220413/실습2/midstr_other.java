@@ -17,8 +17,9 @@ public class midstr_other {
 		System.out.println(result);
 	}
 	
-	public static String midstr(String...strs) {
-		int a=Integer.parseInt(strs[1]);
+	//가변 : 메소드로 전달될 인수의 정확한 개수를 알 수 없을 때 사용된다.
+	public static String midstr(String...strs) {  //strs에 s,a,b인수를 배열로 하나씩 넣는다.
+		int a=Integer.parseInt(strs[1]); //parseInt() : String타입의 숫자를 int타입으로 변환
 		int b=Integer.parseInt(strs[2]);
 		
 		//원본 문자열 최대 인덱스보다 큰 시작 인덱스를 주면 오류
