@@ -74,16 +74,16 @@ class Select extends Tr{
 		 		return new Strcmp(s,t);
 		 }
 		// 문자열이 숫자면 Numcmp호출
-		return new Numcmp(s,t);
+		return new Numcmp(s,t); //객체 return할 때는 new를 앞에 쓴다.
 
 	}
 	
 	//connect 메소드 - 매개 변수로 받은 객체의 cmp 메소드 실행한 결과를 리턴
-	public int connect(Tr Q) {
-		if(Q instanceof Strcmp)
-			return ((Strcmp)Q).cmp(); 
-		else
-			return ((Numcmp)Q).cmp();
+	public int connect(Tr Q) { //매개변수가 부모클래스인 Tr 데이터 타입으로 들어온다. 그러나 그게 Strcmp인지 Numcmp인지는 모르는 상태->그래서 if문으로 구별한다.
+		if(Q instanceof Strcmp) //Strcmp이면 
+			return ((Strcmp)Q).cmp();  //Q를 Strcmp로 다운캐스팅해주고 Strcmp의 cmp를 쓴다.
+		else  //Numcmp이면
+			return ((Numcmp)Q).cmp(); //Q를 Numcmp로 다운캐스팅해주고 Numcmp의 cmp를 쓴다.
 	}
 		
 
