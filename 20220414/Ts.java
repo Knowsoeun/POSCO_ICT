@@ -21,6 +21,9 @@ public class Ts {
 		
 		//메소드 정의
 		public int check() {
+			//이중 for문 (1)
+			//s, t 이중 for문 쓰지 말고 따로 하기
+			/*
 			for (int i=0; i<s.length(); i++) {                             //s문자열 길이만큼 반복
 				for (int j=0; j<t.length(); j++) {                         //t문자열 길이만큼 반복
 					if(Character.isDigit(s.charAt(i))==false)            
@@ -29,10 +32,26 @@ public class Ts {
 								if (Character.isDigit(t.charAt(i))==false) 
 									if(t.charAt(i)!='.')                   
 										if(t.charAt(i)!='-')              
-											return 1;                     
+											return STR;                     
 				}
 			}
-			return 0;  //둘다 숫자이므로 NUM인 0을 반환한다.
+			return NUM;  //둘다 숫자이므로 NUM인 0을 반환한다.
+			
+			*/
+			
+			 //단일 for문 (2)
+			 for (int i=0; i<s.length(); i++){
+			 	if(Character.isDigit(s.charAt(i))==false && s.charAt(i)!='.' && s.charAt(i)!='-')
+			 	  return STR;
+			 }
+			 
+			 for (int i=0; i<t.length(); i++){
+			 	if(Character.isDigit(t.charAt(i))==false && t.charAt(i)!='.' && t.charAt(i)!='-')
+			 	  return STR;
+			 }
+			 
+			 return NUM;
+			 
 		}
 }
 
