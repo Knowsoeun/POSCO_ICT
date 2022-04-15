@@ -1,3 +1,6 @@
+//(방안2)
+
+
 package prac4;
 
 import java.util.Scanner;
