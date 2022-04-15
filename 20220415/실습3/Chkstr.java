@@ -1,3 +1,5 @@
+//(1안)
+
 package prac4;
 import java.util.Scanner;
 
