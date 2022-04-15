@@ -12,16 +12,12 @@ abstract class Tr { //두 문자열과 두 문자열의 상태 정보를 가진�
 	public Tr(String s, String t) {
 		this.s=s;
 		this.t=t;
-
 	}
 }
 
 //부모 추상 인터페이스
 interface Ti { 
-
 	int cmp(); //추상 메소드 생성
-
-
 }
 
 
@@ -34,7 +30,7 @@ class Strcmp extends Tr implements Ti{  //두 문자열을 문자로 비교한�
 	}
 
 	//cmp메소드: 문자를 비교하는 함수
-	@Override
+	@Override    // 인터페이스 Ti의 메소드를 사용했으므로 오버라이드(상속)
 	public int cmp() {
 		return s.compareTo(t);	
 	}
@@ -50,7 +46,7 @@ class Numcmp extends Tr implements Ti{
 	}
 
 	//cmp 메소드: 실수로 변환하여 비교하는 함수
-	@Override
+	@Override    // 인터페이스 Ti의 메소드를 사용했으므로 오버라이드(상속)
 	public int cmp() {
 		double a = Double.parseDouble(s); //실수로 바꿔준다.
 		double b = Double.parseDouble(t); 
