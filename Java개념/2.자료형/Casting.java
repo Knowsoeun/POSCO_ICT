@@ -2,6 +2,7 @@ public class Test{
   public static void main(String[] args){
     int a = 10;
     double b;
+    
     b = a;  System.out.println(b);  //10 .0
     
     // 큰 자료형(double) -> 작은 자료형(int) 오버플로우로 error 발생
