@@ -1,0 +1,63 @@
+## 원연결리스트  
+원형 연결 리스트란 리스트의 마지막 노드의 링크가 첫 번째 노드를 가리키는 리스트이다.  
+
+단순 연결 리스트에서는 마지막 노드의 링크가 Null 이었지만, 여기서는 첫 번째 노드의 주소가 되는 것이다.  
+
+노드의 구현 자체는 단순 연결 리스트와 다르지 않다.  
+1. 원형연결리스트의 구현   
+```java
+public class ListNode {
+	Object data;
+	ListNode link;
+	
+	public ListNode() {
+		this.data = null;
+        this.link = null;
+	}
+    
+    public ListNode(Object data) {
+        this.data = data;
+        thius.link = null;
+    }
+    
+    public Object getData() {
+        return this.data;
+    }
+}
+```  
+2. 원형연결리스트에서의 삽입  
+```java
+// 마지막 노드에 삽입하는 경우만 보도록 하자
+public class Circular {
+    private ListNode cl;
+    
+    void insertLast(Object input) {
+        ListNode node = new ListNode(input);
+        if (cl == null) {
+            cl = node;
+            node.link = node;
+        }
+        else {
+            ListNode curr = cl;
+            while (curr.link != cl) {
+                curr = curr.link;
+            }
+            node.link = curr.link;
+            curr.link = node;
+        }
+    } 
+}
+```  
+3. 원형연결리스트에서의 삭제  
+```java
+// 마지막 노드를 삭제하는 경우만 보도록 하자
+void delete() {
+    ListNode prev = cl;
+    ListNode curr = cl.link;
+    while (curr.link != cl) {
+        prev = curr;
+        curr = curr.link;
+    }
+    prev.link = curr.link;
+}
+```
