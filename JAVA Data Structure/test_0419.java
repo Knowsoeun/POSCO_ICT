@@ -3,17 +3,18 @@ import java.util.Scanner;
 
 /*
 2022-04-19
-³ë¼ÒÀº
+ë…¸ì†Œì€
 */
 
+//ì”ëˆ ê³„ì‚°í•˜ê¸° 
 public class test_0419 {
 	public static void main(String[] args) {
 		/*
-		µ·ÀÇ ±İ¾×À» 56450 ÀÔ·Â.
-		5¸¸¿ø, ¸¸¿ø, 5Ãµ¿ø, Ãµ¿ø, 500¿ø, 100¿ø, 50¿ø º¯È¯ Ãâ·Â 
+		ëˆì˜ ê¸ˆì•¡ì„ 56450 ì…ë ¥.
+		5ë§Œì›, ë§Œì›, 5ì²œì›, ì²œì›, 500ì›, 100ì›, 50ì› ë³€í™˜ ì¶œë ¥ 
 		 */
 		Scanner sc=new Scanner(System.in); 
-		System.out.println("±İ¾×À» ÀÔ·ÂÇÏ¼¼¿ä: "); //ÀÔ·Â
+		System.out.println("ê¸ˆì•¡ì„ ì…ë ¥í•˜ì„¸ìš”: "); //ì…ë ¥
 		int sum=sc.nextInt();
 		
 		int _5man, _man, _5chun, chun, _500, _100, _50;
@@ -26,13 +27,13 @@ public class test_0419 {
 		_50 = ((((((sum%50000)%10000)%1000)%1000)%500)%100)/50;
 		
 		
-		System.out.println("¿À¸¸¿ø " + _5man +"Àå");
-		System.out.println("¸¸¿ø " + _man +"Àå");
-		System.out.println("¿ÀÃµ¿ø " + _5chun +"Àå");
-		System.out.println("Ãµ¿ø " + chun +"Àå");
-		System.out.println("¿À¹é¿ø " + _500 +"°³");
-		System.out.println("¹é¿ø " + _100 +"°³");
-		System.out.println("¿À½Ê¿ø " + _50 +"°³");
+		System.out.println("ì˜¤ë§Œì› " + _5man +"ì¥");
+		System.out.println("ë§Œì› " + _man +"ì¥");
+		System.out.println("ì˜¤ì²œì› " + _5chun +"ì¥");
+		System.out.println("ì²œì› " + chun +"ì¥");
+		System.out.println("ì˜¤ë°±ì› " + _500 +"ê°œ");
+		System.out.println("ë°±ì› " + _100 +"ê°œ");
+		System.out.println("ì˜¤ì‹­ì› " + _50 +"ê°œ");
 		
 
 	}
