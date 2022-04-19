@@ -2,21 +2,22 @@ package dd;
 import java.util.Scanner;
 /*
 2022-04-19
-³ë¼ÒÀº
+ë…¸ì†Œì€
 */
 
+//ì„±ì  ì…ë ¥ë°›ì•„ì„œ switchë¬¸ìœ¼ë¡œ êµ¬í˜„í•˜ê¸°
 public class switch_test {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		
-		System.out.print("Á¡¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä(0~100): ");
+		System.out.print("ì ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”(0~100): ");
 		
 		int score = scanner.nextInt();
 		score = (score * 10)/100;
 		char grade;
 		
-		//switch¹®
+		//switchë¬¸
 		switch(score){
 		case 10: case 9:
 			grade='A';
@@ -35,7 +36,7 @@ public class switch_test {
 			break;
 		}
 		
-		System.out.println("ÇĞÁ¡Àº "+ grade +"ÀÔ´Ï´Ù.");
+		System.out.println("í•™ì ì€ "+ grade +"ì…ë‹ˆë‹¤.");
 		
 		
 
