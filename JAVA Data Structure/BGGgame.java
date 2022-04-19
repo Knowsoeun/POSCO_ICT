@@ -3,54 +3,55 @@ import java.util.Scanner;
 
 /*
 2022-04-19
-³ë¼ÒÀº
+ë…¸ì†Œì€
 */
 
+//ì¤‘ì²© ifë¬¸ìœ¼ë¡œ ê°€ìœ„, ë°”ìœ„, ë³´ ê²Œì„ êµ¬í˜„í•˜ê¸°
 public class BGGgame {
 
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
 		
-		System.out.println("°¡À§ ¹ÙÀ§ º¸ °ÔÀÓÀÔ´Ï´Ù. °¡À§, ¹ÙÀ§, º¸ Áß¿¡¼­ ÀÔ·ÂÇÏ¼¼¿ä.: ");
-		System.out.print("Ã¶¼ö >> ");
+		System.out.println("ê°€ìœ„ ë°”ìœ„ ë³´ ê²Œì„ì…ë‹ˆë‹¤. ê°€ìœ„, ë°”ìœ„, ë³´ ì¤‘ì—ì„œ ì…ë ¥í•˜ì„¸ìš”.: ");
+		System.out.print("ì² ìˆ˜ >> ");
 		String a = s.next();
-		System.out.print("¿µÈñ >> ");
+		System.out.print("ì˜í¬ >> ");
 		String b = s.next();
 		
 		
-		//Ã¶¼ö°¡ °¡À§¸¦ ³ÂÀ» °æ¿ì
-		if (a.equals("°¡À§")) {
-			if (b.equals("¹ÙÀ§")) {
-				System.out.print("¿µÈñ°¡ ÀÌ°å½À´Ï´Ù.");
+		//ì² ìˆ˜ê°€ ê°€ìœ„ë¥¼ ëƒˆì„ ê²½ìš°
+		if (a.equals("ê°€ìœ„")) {
+			if (b.equals("ë°”ìœ„")) {
+				System.out.print("ì˜í¬ê°€ ì´ê²¼ìŠµë‹ˆë‹¤.");
 			}
-			else if (b.equals("º¸")){
-				System.out.print("Ã¶¼ö°¡ ÀÌ°å½À´Ï´Ù.");
-			}
-		}
-		
-		//Ã¶¼ö°¡ º¸¸¦ ³ÂÀ» °æ¿ì
-		else if (a.equals("º¸")) {
-			if (b.equals("¹ÙÀ§")) {
-				System.out.print("Ã¶¼ö°¡ ÀÌ°å½À´Ï´Ù.");
-			}
-			else if (b.equals("°¡À§")){
-				System.out.print("¿µÈñ°¡ ÀÌ°å½À´Ï´Ù.");
+			else if (b.equals("ë³´")){
+				System.out.print("ì² ìˆ˜ê°€ ì´ê²¼ìŠµë‹ˆë‹¤.");
 			}
 		}
 		
-		//Ã¶¼ö°¡ °¡À§¸¦ ³ÂÀ» °æ¿ì
-		else if (a.equals("°¡À§")) {
-			if (b.equals("¹ÙÀ§")) {
-				System.out.print("¿µÈñ°¡ ÀÌ°å½À´Ï´Ù.");
+		//ì² ìˆ˜ê°€ ë³´ë¥¼ ëƒˆì„ ê²½ìš°
+		else if (a.equals("ë³´")) {
+			if (b.equals("ë°”ìœ„")) {
+				System.out.print("ì² ìˆ˜ê°€ ì´ê²¼ìŠµë‹ˆë‹¤.");
 			}
-			else if (b.equals("º¸")){
-				System.out.print("Ã¶¼ö°¡ ÀÌ°å½À´Ï´Ù.");
+			else if (b.equals("ê°€ìœ„")){
+				System.out.print("ì˜í¬ê°€ ì´ê²¼ìŠµë‹ˆë‹¤.");
 			}
 		}
 		
-		//ºñ°åÀ» °æ¿ì
+		//ì² ìˆ˜ê°€ ê°€ìœ„ë¥¼ ëƒˆì„ ê²½ìš°
+		else if (a.equals("ê°€ìœ„")) {
+			if (b.equals("ë°”ìœ„")) {
+				System.out.print("ì˜í¬ê°€ ì´ê²¼ìŠµë‹ˆë‹¤.");
+			}
+			else if (b.equals("ë³´")){
+				System.out.print("ì² ìˆ˜ê°€ ì´ê²¼ìŠµë‹ˆë‹¤.");
+			}
+		}
+		
+		//ë¹„ê²¼ì„ ê²½ìš°
 		if (a.equals(b)) {
-			System.out.print("ºñ°å½À´Ï´Ù.");
+			System.out.print("ë¹„ê²¼ìŠµë‹ˆë‹¤.");
 
 	}
 
