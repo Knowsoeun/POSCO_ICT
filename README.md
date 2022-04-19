@@ -1,1 +1,1 @@
-# POSCO ICT_IT
+# POSCO ICT_3기
