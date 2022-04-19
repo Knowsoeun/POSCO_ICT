@@ -4,11 +4,11 @@ public class Timetest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//½Ã,ºĞ,ÃÊ¸¦ ÀÔ·Â¹Ş´Â´Ù.
+		//ì‹œ,ë¶„,ì´ˆë¥¼ ì…ë ¥ë°›ëŠ”ë‹¤.
 		int result;
 		
 		Scanner sc=new Scanner(System.in);
-		System.out.println("½Ã, ºĞ, ÃÊ"); //ÀÔ·Â
+		System.out.println("ì‹œ, ë¶„, ì´ˆ"); //ì…ë ¥
 		
 		int hour=sc.nextInt();
 		int min=sc.nextInt();
@@ -17,15 +17,15 @@ public class Timetest {
 		Time first_time = new Time(10,10,10);
 		Time second_time = new Time(hour, min, sec);
 		
-		Time add_time=first_time.add(second_time); // add ¸Ş¼Òµå È£Ãâ
+		Time add_time=first_time.add(second_time); // add ë©”ì†Œë“œ í˜¸ì¶œ
 
-		Time sub_time = first_time.sub(second_time); // sub ¸Ş¼Òµµ È£Ãâ
+		Time sub_time = first_time.sub(second_time); // sub ë©”ì†Œë„ í˜¸ì¶œ
 		
-		add_time.print(); // print ¸Ş¼Òµå È£Ãâ
+		add_time.print(); // print ë©”ì†Œë“œ í˜¸ì¶œ
 		System.out.println();
-		sub_time.print( ); // print ¸Ş¼Òµå È£Ãâ
+		sub_time.print( ); // print ë©”ì†Œë“œ í˜¸ì¶œ
 		
-		result = first_time.compare(second_time); // compare ¸Ş¼Òµå È£Ãâ
+		result = first_time.compare(second_time); // compare ë©”ì†Œë“œ í˜¸ì¶œ
 		System.out.println("\n"+result);
 		
 	}
