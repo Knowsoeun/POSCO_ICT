@@ -6,7 +6,7 @@ import java.util.Scanner;
 노소은
 */
 
-//잔돈 계산하기 
+//연산자 활용해서 잔돈 계산 
 public class test_0419 {
 	public static void main(String[] args) {
 		/*
