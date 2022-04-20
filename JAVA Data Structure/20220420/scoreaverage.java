@@ -12,7 +12,7 @@ public class scoreaverage {
 				sum+=score[year][term];
 		int n = score.length;
 		int m =score[0].length;
-		System.out.println("4³â ÀüÃ¼ ÆòÁ¡ Æò±ÕÀº "+sum/(n*m));
+		System.out.println("4Â³Ã¢ Ã€Ã¼ÃƒÂ¼ Ã†Ã²ÃÂ¡ Ã†Ã²Â±Ã•Ã€Âº "+sum/(n*m));
 	}
 
 }
