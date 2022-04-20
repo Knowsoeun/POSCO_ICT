@@ -4,23 +4,24 @@ public class scoreaverage2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		double score[][]= {{3.3, 3.4}, // 1ÇĞ³â 1, 2ÇĞ±â ÆòÁ¡
-				{3.5, 3.6}, //2ÇĞ³â 1, 2ÇĞ±â ÆòÁ¡
-				{3.7, 4.0}, // 3ÇĞ³â 1,2ÇĞ±â ÆòÁ¡
-				{4.1, 4.2}}; // 4ÇĞ³â 1,2ÇĞ±â ÆòÁ¡
+		double score[][]= {{3.3, 3.4}, // 1í•™ë…„ 1, 2í•™ê¸° í‰ì 
+				{3.5, 3.6}, //2í•™ë…„ 1, 2í•™ê¸° í‰ì 
+				{3.7, 4.0}, // 3í•™ë…„ 1,2í•™ê¸° í‰ì 
+				{4.1, 4.2}}; // 4í•™ë…„ 1,2í•™ê¸° í‰ì 
 		double sum ,sum1 = 0;
 		double sum2 = 0;
 		double total =0;
 		
 		int n = score.length;
 		int m =score[0].length;
-		System.out.println("|  ÇĞ³â  |   1ÇĞ±â  |   2ÇĞ±â   |   Æò±Õ   |");
+		System.out.println("|  í•™ë…„  |   1í•™ê¸°  |   2í•™ê¸°   |   í‰ê·    |");
+		System.out.println("---------------------------------------");
 		
 		int years=1;
 		for(int year =0; year<4; year++) {
 			sum = score[year][0]+score[year][1];
 			sum = Math.round(sum * 100) / 100.0;
-			System.out.println("| "+years+"ÇĞ³â  |   "+score[year][0]+"   |   "+score[year][1]+"   |   "+sum/2+"  |");
+			System.out.println("| "+years+"í•™ë…„  |   "+score[year][0]+"   |   "+score[year][1]+"   |   "+sum/2+"  |");
 			years+=1;
 		}
 		
@@ -33,7 +34,7 @@ public class scoreaverage2 {
 		sum2 = Math.round(sum2 * 100) / 100.0;
 		total = total/2;
 		total = Math.round(total * 100) / 100.0;
-		System.out.println("|  ÀüÃ¼  |   "+sum1/4+"  |   "+sum2/4+"   |   "+total+"   |");
+		System.out.println("|  ì „ì²´  |   "+sum1/4+"  |   "+sum2/4+"   |   "+total+"   |");
 	}
 	
 
