@@ -1,1 +1,1 @@
-![다운로드](https://user-images.githubusercontent.com/63652571/164129451-391f2cf7-c8c1-472d-a29a-3f926c8d5f42.png)
+![다운로드](https://user-images.githubusercontent.com/63652571/164129510-af06f533-d95d-46f2-872c-a275ea5f5ea4.png)
