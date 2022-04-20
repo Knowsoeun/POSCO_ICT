@@ -34,6 +34,7 @@ public class scoreaverage2 {
 		sum2 = Math.round(sum2 * 100) / 100.0;
 		total = total/2;
 		total = Math.round(total * 100) / 100.0;
+		System.out.println("---------------------------------------");
 		System.out.println("|  전체  |   "+sum1/4+"  |   "+sum2/4+"   |   "+total+"   |");
 	}
 	
