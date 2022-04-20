@@ -5,7 +5,7 @@ public class for_each {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("5°³ÀÇ Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä: ");
+		System.out.println("5ê°œì˜ ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”: ");
 		int intArray[] = new int[5];
 		
 		double sum = 0.0;
@@ -15,7 +15,7 @@ public class for_each {
 		for (int j=0; j<intArray.length; j++) 
 			sum+= intArray[j];
 			
-		System.out.println("Æò±ÕÀº "+sum/intArray.length);
+		System.out.println("í‰ê· ì€ "+sum/intArray.length);
 		sc.close();
 			
 		}
