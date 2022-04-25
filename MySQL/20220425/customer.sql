@@ -15,4 +15,4 @@ insert into customer values ('carrot', '원유선', 28, 'gold', '교사', 4500);
 insert into customer values ('orange', '정지영', 22, 'silver', '학생', 0);
 
 select * from customer where grade = 'gold' and point>2000;
-
+select name, grade, point from customer;
