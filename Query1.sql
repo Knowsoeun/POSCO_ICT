@@ -1,4 +1,4 @@
-create database web1;
+create database web;
 use web;
 show tables;
 create table books(
