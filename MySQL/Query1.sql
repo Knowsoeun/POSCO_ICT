@@ -12,3 +12,5 @@ insert into books (title, author, year, price) values ('운영체제','김필동
 insert into books (title, author, year, price) values ('자바','이한우','2019',35000);
 insert into books (title, author, year, price) values ('C언어','박한빛','2020',40000);
 select * from books;
+delete from books where price='35000';  
+select * from books;
