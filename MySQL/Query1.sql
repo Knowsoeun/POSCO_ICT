@@ -1,4 +1,4 @@
-create database web;
+create database web3;
 use web;
 show tables;
 create table books(
