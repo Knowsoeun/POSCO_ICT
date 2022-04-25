@@ -5,7 +5,7 @@ public class Books {
 	public static void main(String[] args) {
 		String url = "jdbc:mysql://localhost:3306/web3";
 		String id = "root";
-		String password = "gi6271cy";
+		String password = "1234";
 		Connection conn = null;  // db에 접속
 		Statement stmt = null;  // sql 명령어 실행
 		ResultSet rs = null;        // 결과셋 
