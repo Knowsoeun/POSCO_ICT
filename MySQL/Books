@@ -3,7 +3,7 @@ import java.sql.*;
 public class Books {
 
 	public static void main(String[] args) {
-		String url = "jdbd:mysql://localhost:3306/web3";
+		String url = "jdbc:mysql://localhost:3306/web3";
 		String id = "root";
 		String password = "gi6271cy";
 		Connection conn = null;  // db에 접속
@@ -12,9 +12,9 @@ public class Books {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver"); //드라이버 로딩
 			conn = DriverManager.getConnection(url,id,password); // db에 접속
-			//String sql = "select * from books";
-			String sql = "insesrt into books (title, author, year, price) "
-					+"   values('자료구조', '이한빛','2022',50000)";
+			String sql = "select * from books";
+			//String sql = "insesrt into books (title, author, year, price) "
+			//		+"   values('자료구조', '이한빛','2022',50000)";
 			stmt = conn.createStatement();
 			rs = stmt.executeQuery(sql); // sql 실행 객체
 			while(rs.next()) {
@@ -31,5 +31,7 @@ public class Books {
 		}
 
 	}
+
+
 
 
