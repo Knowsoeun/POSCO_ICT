@@ -7,5 +7,6 @@ create table 고객(
 적립금 int default 0,
 primary key(고객아이디)
 );
+
 show tables;
 describe 고객;
