@@ -9,5 +9,6 @@ primary key(주문번호),
 foreign key(주문고객) references 고객(고객아이디),
 foreign key(주문제품) references 제품(제품번호)
 );
+
 show tables;
 describe 주문;
