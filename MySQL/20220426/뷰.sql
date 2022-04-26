@@ -7,3 +7,8 @@ create view 제품2 as select 제품명, 재고량, 제조업체 from 제품 wit
 select * from 제품2;
 
 insert into 제품1 values ('p08',1000,'신선식품');
+
+/*뷰를 삭제해도 기본 테이블은 영향을 받지 않는다.*/
+/*drop view 뷰_이름 cacscade | restrict;*/
+-- cascade: 삭제할 뷰와 관련된 다른 뷰를 모두 함께 삭제하도록 지정한다.
+-- restrict: 삭제할 뷰와 관련된 다른 뷰가 존재하면 삭제를 수행하지 않도록 지정한다.
