@@ -13,22 +13,14 @@ insert into 고객 (고객아이디, 고객이름, 나이, 등급, 직업, 적�
 
 alter table 고객 drop constraint cnk_avg;/*제약조건 삭제*/
 
-insert into 고객 (고객아이디, 고객이름, 나이, 등급, 직업, 적립금) values (
-'apple','정소화',20,'gold','학생',1000);
-insert into 고객 (고객아이디, 고객이름, 나이, 등급, 직업, 적립금) values (
-'banana','jones',19,'gold','학생',1000); /*나이 제약조건에 걸려 insert되지 않는다.*/
-insert into 고객 (고객아이디, 고객이름, 나이, 등급, 직업, 적립금) values (
-'banana','김선우',25,'vip','간호사',2500);
-insert into 고객 (고객아이디, 고객이름, 나이, 등급, 직업, 적립금) values (
-'carrot','고명석',28,'gold','교사',4500);
-insert into 고객 (고객아이디, 고객이름, 나이, 등급, 직업, 적립금) values (
-'orange','김용욱',22,'silver','학생',0);
-insert into 고객 (고객아이디, 고객이름, 나이, 등급, 직업, 적립금) values (
-'melon','성원용',35,'gold','회사원',5000);
-insert into 고객 (고객아이디, 고객이름, 나이, 등급, 직업, 적립금) values (
-'peach','오형준',null,'silver','의사',300);
-insert into 고객 (고객아이디, 고객이름, 나이, 등급, 직업, 적립금) values (
-'pear','채광주',31,'silver','회사원',500);
+insert into 고객 (고객아이디, 고객이름, 나이, 등급, 직업, 적립금) values ('apple','정소화',20,'gold','학생',1000);
+insert into 고객 (고객아이디, 고객이름, 나이, 등급, 직업, 적립금) values ('banana','jones',19,'gold','학생',1000); /*나이 제약조건에 걸려 insert되지 않는다.*/
+insert into 고객 (고객아이디, 고객이름, 나이, 등급, 직업, 적립금) values ('banana','김선우',25,'vip','간호사',2500);
+insert into 고객 (고객아이디, 고객이름, 나이, 등급, 직업, 적립금) values ('carrot','고명석',28,'gold','교사',4500);
+insert into 고객 (고객아이디, 고객이름, 나이, 등급, 직업, 적립금) values ('orange','김용욱',22,'silver','학생',0);
+insert into 고객 (고객아이디, 고객이름, 나이, 등급, 직업, 적립금) values ('melon','성원용',35,'gold','회사원',5000);
+insert into 고객 (고객아이디, 고객이름, 나이, 등급, 직업, 적립금) values ('peach','오형준',null,'silver','의사',300);
+insert into 고객 (고객아이디, 고객이름, 나이, 등급, 직업, 적립금) values ('pear','채광주',31,'silver','회사원',500);
 
 alter table 고객 drop constraint cnk_avg;/*제약조건 삭제*/
 
