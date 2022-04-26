@@ -1,6 +1,6 @@
 create table 주문(
-주문번호 char(3) not null,
-주문고객 varchar(20),
+주문번호 char(3) not null, /* char: 고정길이 문자열 */
+주문고객 varchar(20), /* varchar: 가변길이 문자열*/
 주문제품 char(3),
 수량 int,
 배송지 varchar(30),
