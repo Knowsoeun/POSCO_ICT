@@ -20,7 +20,7 @@ BEGIN                                      -- 시작
 END $$                                     -- 구구단 프로시저 정의 끝
 DELIMITER ;
 
-<!--구구단 실행-->
+/*구구단 실행*/
 CALL whileProc();                         
 
 select * from gugutbl;                     -- 구구단 보여주기
