@@ -1,7 +1,7 @@
 /*구구단 테이블 정의*/
 create table gugutbl ( txt varchar(100)); 
 
-/*구구단 시작*/
+/*구구단*/
 DELIMITER $$                               -- 프로시저 정의 시작
 CREATE PROCEDURE whileProc()               -- 구구단 프로시저 생성
 BEGIN                                      -- 시작
