@@ -1,5 +1,7 @@
-create table gugutbl ( txt varchar(100));  -- 구구단 테이블 정의
+/*구구단 테이블 정의*/
+create table gugutbl ( txt varchar(100)); 
 
+/*구구단 시작*/
 DELIMITER $$                               -- 프로시저 정의 시작
 CREATE PROCEDURE whileProc()               -- 구구단 프로시저 생성
 BEGIN                                      -- 시작
@@ -21,6 +23,7 @@ END $$                                     -- 구구단 프로시저 정의 끝
 DELIMITER ;
 
 /*구구단 실행*/
-CALL whileProc();                         
+CALL whileProc();             
 
-select * from gugutbl;                     -- 구구단 보여주기
+/*구구단 보여주기*/
+select * from gugutbl;                    
