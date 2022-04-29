@@ -1,5 +1,5 @@
 ```cmd
-mongo  
+>mongo  
 >show dbs  
 >use local 
 >npm install mongodb  
