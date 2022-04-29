@@ -1,5 +1,5 @@
 ```cmd
->mongo   // mongo 쓰고나서 local 들어간 다음 js를 실행해야 한다.
+>mongo   
 >show dbs  
 >use local 
 >npm install mongodb  
@@ -7,3 +7,4 @@
 ```
 ![image](https://user-images.githubusercontent.com/63652571/165909700-2a66a2a2-9f6a-467e-9f49-f2596cd79390.png)
 
+- mongo 쓰고나서 local 들어간 다음 js를 실행해야 한다.
