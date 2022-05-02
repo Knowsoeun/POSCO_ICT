@@ -20,6 +20,8 @@ db
 ```cmd
 show dbs
 ```
+![image](https://user-images.githubusercontent.com/63652571/166173537-c89750ef-a162-4ae4-9d95-b61c2e974202.png)
+
 이 시점에서 mongo-example database는 아직 생성되지 않았다. 최소 한 개 이상의 document를 추가하여야 database가 생성된다.  
 insert() 메소드를 사용하여 collection에 document를 insert한다. 이때 collection books도 생성된다.  
 ```js
