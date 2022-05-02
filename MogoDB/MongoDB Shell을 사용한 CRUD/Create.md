@@ -1,0 +1,71 @@
+# MongoDB Shell을 사용한 CRUD
+MongoDB Shell을 사용하여 CRUD의 기본을 알아본다.  
+MongoDB Shell은 JavaScript 실행 환경을 가지고 있어 JavaScript의 실행이 가능하다.
+```cmd
+for(var i = 0; i < 3 ; i++) { print("i = " + i); }
+```
+![image](https://user-images.githubusercontent.com/63652571/166172270-60af7794-e97c-4486-965e-656bba86fbb6.png)
+
+## Create
+```cmd use <database_name>``` shell method를 사용하여 database를 생성한다.  
+만약 동일한 이름의 Database가 존재할 경우, 그 database를 사용하며 존재하지 않을 경우, database를 생성한다.  
+```cmd
+use mongo-example
+```
+```cmd db``` shell method를 사용하여 현재 사용중인 database를 확인한다.  
+```cmd
+db
+```
+```cmd show dbs``` shell method를 사용하여 데이터베이스 리스트를 확인한다.  
+```cmd
+show dbs
+```
+이 시점에서 mongo-example database는 아직 생성되지 않았다. 최소 한 개 이상의 document를 추가하여야 database가 생성된다.  
+insert() 메소드를 사용하여 collection에 document를 insert한다. 이때 collection books도 생성된다.  
+```js
+db.collection.insert(
+  <document or array of documents>,
+  {
+    writeConcern: <document>,
+    ordered: <boolean>
+  }
+)
+```
+![image](https://user-images.githubusercontent.com/63652571/166173315-779c6535-f567-43fa-a136-16d4d1077624.png)
+```cmd
+db.books.insert({ title: "Example1", author: "Lee", price: 100 })
+```
+한번에 여러 개의 document를 insert할 수 있다.
+```cmd
+db.books.insert([
+  { title: "Example2", author: "Lee", price: 200 },
+  { title: "Example3", author: "Lee", price: 300 },
+  { title: "Example4", author: "Lee", price: 400 }
+  ])
+BulkWriteResult({
+  "writeErrors" : [ ],
+  "writeConcernErrors" : [ ],
+  "nInserted" : 3,
+  "nUpserted" : 0,
+  "nMatched" : 0,
+  "nModified" : 0,
+  "nRemoved" : 0,
+  "upserted" : [ ]
+})
+```
+MongoDB는 Schema-less하므로 동일한 Collection 내에 있더라도 document level의 다른 Schema를 가질 수 있다.
+```cmd
+db.books.insert({ title: "Example5", author: "Lee", price: 200, stock: 0 })
+```
+database list를 확인하면 mongo-example database가 생성된 것을 확인할 수 있다.
+```cmd
+show dbs
+```
+collection list를 확인하려면 아래 shell method를 실행한다.
+```cmd
+show collections
+```
+또는 getCollectionNames() 메소드를 사용한다.
+```cmd
+db.getCollectionNames()
+```
