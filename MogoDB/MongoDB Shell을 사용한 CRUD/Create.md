@@ -71,3 +71,4 @@ show collections
 ```cmd
 db.getCollectionNames()
 ```
+![image](https://user-images.githubusercontent.com/63652571/166173616-7b5bce24-3bb8-4614-b33c-84a81506bb7f.png)
