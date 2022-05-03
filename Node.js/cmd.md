@@ -24,4 +24,4 @@ undefined
 1. .js 파일 저장 후 cmd 열기  
 2. cd 폴더 경로 들어가기  
 3. 파일 이름이 app.js라면, ```cmd node app.js```라고 치면 한번에 실행된다.   
-4. ![image](https://user-images.githubusercontent.com/63652571/166358024-596b3d70-17da-4474-8406-5527aa0065b7.png)  
+![image](https://user-images.githubusercontent.com/63652571/166358024-596b3d70-17da-4474-8406-5527aa0065b7.png)  
