@@ -27,3 +27,5 @@ undefined
 3. 파일 이름이 app.js라면, ```cmd node app.js```라고 치면 한번에 실행된다.  
   
 ![image](https://user-images.githubusercontent.com/63652571/166358024-596b3d70-17da-4474-8406-5527aa0065b7.png)  
+
+**근데 사실 번거롭게 cmd켤 필요 없이 VS에서 Ctri+`로 command창(터미)띄워서 할 수 있다.**   
