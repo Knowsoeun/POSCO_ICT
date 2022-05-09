@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<!-- 
+	form : 전송(입력받은 데이터) -> tag
+		   textfield, button, textarea, checkbox, radiobutton...
+ -->
+	<!-- 
+ 	<태그명 attribute명="property명:값"
+ 	
+ 	<태그명 id=, class=, name=
+ 	
+ 	목적: JavaScript에서 접근 또는 데이터를 전송
+ 	id : 현재 페이지에서 한 개만이 유효
+ 	class : 다중으로 접근 또는 사용이 가능. CSS
+ 	name : 입력받은 값을 전달
+  -->
+
+	<p id="pid" class=" pcls" name="pname">hello</p>
+	<p id="domo" class="pcls" name="pname">world</p>
+
+	<a href="moveHtml.html">moveHtml.html로 이동</a>
+	<br>
+
+	<!-- input->type="submit" : 버튼 만들기 -->
+	<form action="moveHtml.html">
+		moveHtml.html로 이동 <input type="submit" value="이동">
+	</form>
+	<br>
+	<br>
+
+	<!-- placeholer : 텍스트필드 만들기 -->
+	<!-- User Interface(UI) -->
+	<form action="loginAf.jsp">
+		ID: <input type="text" name="id" value="" title="ID를 기입해주세요" size="20"
+			placeholder="ID 기입"> <br> PW: <input type="password"
+			name="pw" size="20"> <br> <input type="submit"
+			value="로그인"> <input type="reset" value="초기화">
+	</form>
+
+	<br>
+	<br>
+	
+	<!-- Html5 -->
+	number: <input type="number" max="5" min="1">
+	<br>
+	날짜: <input type="date">
+	<br>
+	<input type="datetime">
+	<br>
+	color: <input type="color" value="#00ff00">
+	<br>
+	range: <input type="range" max="10" min="0">
+	<br>
+	search: <input type="search">
+	<br><br><br>
+	
+	checkbox & radio button<br>
+	<input type="checkbox" value="패션">패션<br>
+	<input type="checkbox" value="음악" checked="checked">음악<br>
+	<input type="checkbox" value="게임">게임<br>
+	<br>
+	<input type="radio" name="car" value="벤츠" checked="checked">벤츠<br>
+	<input type="radio" name="car" value="아우디">아우디<br>
+	<input type="radio" name="car" value="BMW">BMW<br>
+	<br><br>
+	
+	<!-- rows:세로 cols:가로 -->
+	<textarea rows="10" cols="30">초기값</textarea>
+	
+	<!-- select-->
+	<select multiple="multiple">
+	<option value="apple">사과</option>
+	<option value="pear">배</option>
+	<option value="grape">포도</option>
+	</select>
+	
+	<form action="moveValue.jsp">
+	<input type="checkbox" name="hobby" value="패션">패션<br>
+	<input type="checkbox" name="hobby" value="음악" checked="checked">음악<br>
+	<input type="checkbox" name="hobby" value="게임">게임<br>
+	
+	<input type="submit" value="moveValue로 이동">
+	
+	
+	
+	</form>
+	
+</body>
+</html>

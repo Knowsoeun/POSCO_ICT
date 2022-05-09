@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<span style="font-size: 2em; color: black;">설문조사</span>
+	<br>
+	<form action="prac.jsp">
+		이름: <input type="text" name="name" value="" " size="20"> <br>
+		<br> [질문1]<br> 영어로 대화할 수 있습니까? <br> <input type="radio"
+			name="eng" value="yes">예 <input type="radio" name="eng"
+			value="dn">모르겠습니다 <input type="radio" name="eng" value="no">아니오<br>
+		<br> [질문2]<br> 영어외에 관심있는 언어가 있으면 선택(복수 선택 가능)<br> <input
+			type="checkbox" name="lang" value="ge">독일어 <input
+			type="checkbox" name="lang" value="ch">중국어 <input
+			type="checkbox" name="lang" value="fr">프랑스어<br>
+		<br> [질문3]<br> 영어 수업에 대한 의견이 있으시면 기입해 주십시오.<br>
+		<textarea rows="6" name="writer" cols="60"></textarea>
+		<br>
+		<br> [질문4]<br> 당신의 연령을 선택해 주십시오.<select>
+			<option name="age" value="10">10대</option>
+			<option name="age" value="20">20대</option>
+			<option name="age" value="30">30대</option>
+		</select> <br>
+		<br> <input type="submit" value="작성완료">
+	</form>
+
+
+</body>
+</html>

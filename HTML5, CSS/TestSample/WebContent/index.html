@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<!-- ctrl+shift+F: 코드 정리하기 -->
+
+	<!--  <table border=“1” style=“width: 50%”>-->
+	<div align="center">
+
+		<table border="1">
+			<col width="50">
+			<col width="200">
+			<col width="100">
+
+			<tr>
+				<th>번호</th>
+				<th>이름</th>
+				<th>나이</th>
+			</tr>
+
+			<tr>
+				<td align="center">1</td>
+				<td>홍길동</td>
+				<td><b>24</b></td>
+			</tr>
+
+			<tr>
+				<td align="center">1</td>
+				<td>성춘향</td>
+				<td><b>16</b></td>
+			</tr>
+
+		</table>
+
+	</div>
+
+	<!-- 2번째 -->
+	<br>
+	<br>
+
+	<table border="1">
+		<caption>주소록</caption>
+		<tr>
+			<th>번호</th>
+			<th>이름</th>
+			<th>나이</th>
+			<th colspan="2">전화번호</th>
+			<!-- <th>전화번호</th>-->
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>홍길동</td>
+			<td>24</td>
+			<td>123-4567</td>
+			<td>234-5678</td>
+		</tr>
+	</table>
+
+	<!-- 3번째 -->
+	<br>
+	<br>
+	<table border="1">
+		<tr>
+			<th>번호</th>
+			<td>1</td>
+		</tr>
+		<tr>
+			<th>이름</th>
+			<td>홍길동</td>
+		</tr>
+		<tr>
+			<th>나이</th>
+			<td>24</td>
+		</tr>
+		<tr>
+			<th rowspan="2">전화번호</th>
+			<td>123-4567</td>
+		</tr>
+		<tr>
+			<td>234-5678</td>
+		</tr>
+	</table>
+
+	<!-- 4번째 -->
+	<!-- 
+	list : 목록
+	
+	ul : unordered list (순서없는) 
+	ol : ordered list (순서있는)
+	 -->
+	<ul>
+		<li>coffee</li>
+		<li>tea</li>
+		<li>soda</li>
+	</ul>
+	<ul style="list-style-type: circle;">
+		<li>coffee</li>
+		<li>tea</li>
+		<li>soda</li>
+	</ul>
+	<ul style="list-style-type: squre;">
+		<li>coffee</li>
+		<li>tea</li>
+		<li>soda</li>
+	</ul>
+
+	<ol type="I">
+		<!-- 1 a A i I -->
+		<li>coffee</li>
+		<li>tea</li>
+		<li>soda</li>
+	</ol>
+	<ol start="3">
+		<!-- 3번부터 시작-->
+		<li>coffee</li>
+		<li>tea</li>
+		<li>soda</li>
+	</ol>
+
+	<ul>
+		<li>coffee
+			<ol type="I">
+				<li>black</li>
+				<li>milk</li>
+			</ol>
+		</li>
+		<li>tea</li>
+		<li>soda</li>
+	</ul>
+
+</body>
+</html>
