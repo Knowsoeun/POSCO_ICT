@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<b>변수의 연산</b><br><br>
+	a, b에 대해서 변수 a와 b의 계산 결과를 표시합니다.<br>
+	<br>
+	<button type="button" onclick="plus()">덧셈</button>
+	<button type="button" onclick="minus()">뺄셈</button>
+	<button type="button" onclick="multiful()">곱셈</button>
+	<button type="button" onclick="division()">나눗셈</button>
+	<button type="button" onclick="rest()">나머지</button>
+	<br>
+	<br>
+	<input type="text" id="num1" size="10">
+	<input type="text" id="num2" size="10">
+	=
+	<!-- 결과 -->
+	<input type="text" id="result" size="15">
+
+
+	<script type="text/javascript">
+		function plus() {
+			let plus_result1 = document.getElementById("num1").value;
+			let plus_result2 = document.getElementById("num2").value;
+			let num1 = parseInt(plus_result1);
+			let num2 = parseInt(plus_result2);
+			
+			let real_plus_result = num1+num2;
+
+			document.getElementById("result").value=real_plus_result
+		}
+		function minus() {
+			let plus_result1 = document.getElementById("num1").value;
+			let plus_result2 = document.getElementById("num2").value;
+			let num1 = parseInt(plus_result1);
+			let num2 = parseInt(plus_result2);
+			
+			let real_plus_result = num1-num2;
+
+			document.getElementById("result").value=real_plus_result;
+		}
+		function multiful() {
+			let plus_result1 = document.getElementById("num1").value;
+			let plus_result2 = document.getElementById("num2").value;
+			let num1 = parseInt(plus_result1);
+			let num2 = parseInt(plus_result2);
+			
+			let real_plus_result = num1*num2;
+
+			document.getElementById("result").value=real_plus_result;
+		}
+		function division() {
+			let plus_result1 = document.getElementById("num1").value;
+			let plus_result2 = document.getElementById("num2").value;
+			let num1 = parseInt(plus_result1);
+			let num2 = parseInt(plus_result2);
+			
+			let real_plus_result = num1/num2;
+
+			document.getElementById("result").value=real_plus_result;
+		}
+		function rest() {
+			let plus_result1 = document.getElementById("num1").value;
+			let plus_result2 = document.getElementById("num2").value;
+			let num1 = parseInt(plus_result1);
+			let num2 = parseInt(plus_result2);
+			
+			let real_plus_result = num1%num2;
+
+			document.getElementById("result").value=real_plus_result;
+		}
+	</script>
+
+</body>
+</html>
