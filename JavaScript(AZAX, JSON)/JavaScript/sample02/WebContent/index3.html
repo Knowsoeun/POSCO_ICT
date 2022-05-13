@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<p id="demo"></p>
+
+	<p id="pid">이곳은 강원도 강릉시 옥계면 산불 피해 현장이다. 지난 2019년 4월 4일 강원도 강릉시 옥계면
+		남양리에서 발생한 산불이 동해시 망상해수욕장까지 달려가서야 멈추었다.</p>
+
+
+	<script type="text/javascript">
+		/*
+		 String (wrapper)
+		 */
+		let str = document.getElementById("pid").innerHTML;
+		//let pos = str.indexOf("강릉시"); // 문자열의 위치
+		//let pos = str.lastindexOf("강원도");
+		//let pos = str.search("옥계면");
+		//let pos = str.slice(12, 16); // ==substring
+
+		//document.getElementById("demo").innerHTML = pos;
+		
+		let c = str.charAt(1);
+		document.getElementById("demo").innerHTML = c;
+		
+		str = "hello,world,java,script"; // 홍길동-24-서울시
+		let arrStr=str.split(","); //, == token
+		for(i=0; i<arrStr.length; i++){
+			console.log(arrStr[i]);
+		}
+			
+	</script>
+
+</body>
+</html>

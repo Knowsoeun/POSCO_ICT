@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+#pid {
+	background-color: yellow;
+}
+</style>
+</head>
+<body>
+
+	<!-- 
+
+	access attribute
+	
+	id     : 1개만 유효, JavaScript에서 접근용
+	class  : 다수. CSS용으로 많이 사용한다. 
+	name   : 다수. 데이터 전송용
+
+ -->
+
+	<p id="pid">p 태그입니다</p>
+	<p id="pid">p 태그입니다</p>
+
+	<button type="button" onclick="btnClick()">클릭</button>
+	<br>
+	<br>
+
+	<h3 class="cls">h3 태그입니다</h3>
+	<h3 class="cls">h3 태그입니다</h3>
+	
+	<br>
+	<br>
+
+	<p name="name">p name 태그입니다</p>
+	<script>
+		function btnClick() {
+			//alert("btnClick");
+
+			document.getElementById("pid").innerHTML = "<b>p tag</b>";
+
+			document.getElementByClassName("cls")[1].innerHTML = "h3 tag";
+
+			document.getElementsByName("name")[1].innerHTML = "p name tag";
+			
+			alert(document.getElementsByName("name").length);
+
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+
+<!-- 첫번째 -->
+<!--
+<body onload="loadMessage()">
+
+onload
+<p id="p1"></p>
+<script type="text/javascript">
+function loadMessage(){
+	document.getElementById("p1").innerHTML="loadMessage() 함수호출";
+}
+</script>
+-->
+
+<!-- 두번째 -->
+<!-- <body onload="viewScroll()">
+
+	<pre>
+ 
+한동훈 법무부장관 후보 딸의 수상한 해외 학술지 논문과 봉사활동 홍보 해외 자작기사 게재 의혹 등에 대해 한 후보자가 "연습용 글"이라고 해명한 것을 두고 서울대 교수에 이어 입시학원 대표까지 정면 비판하고 나섰다. 한 후보 딸은 현재 채드윅 송도 국제학교 고등학교 과정에 다니고 있다.
+ 
+서울지역에서 입시학원을 운영하는 김호창 대표는 지난 10일 페이스북에 올린 글에서 "딸의 논문에 대해 '과제나 리포트 수준'이라고 한동훈씨는 말했지만 전 세계 어느 고등학교에서도 학교 과제물이나 개인적인 리포트를 국제적인 학술지에 발표하지는 않는다"면서 "오로지 스펙을 쌓기 위한 방편"이라고 주장했다.
+ 
+그러면서 김 대표는 "학교 숙제 수준의 글을 논문이라 포장하여 돈만 주면 게재해주는 학술지에 올려서 스펙을 만드는, 입시 관점으로 보면 공정을 해하는 가장 악질적인 사기"라고 덧붙였다.
+ 
+이어 김 대표는 "한동훈씨가 많은 사람들을 이 건으로 고소했다는 사실을 접했다"면서 "1. 고등학생이 1년에 10여 편의 논문을 쓸 수 없다는 상식 2. 학교과제나 보고서를 국제적 학술지에 싣기는 힘들다는 상식 3. 그 논문에 외부 조력을 받았다면 그것은 사기라는 상식, 아마도 상식을 가진 대한민국 국민 모두를 고소해야 할 듯하다"고 짚기도 했다.
+ 
+우종학 교수 "조국과 나경원 자녀보다 열 배 이상 심각"
+ 
+앞서 지난 8일, 우종학 서울대 물리천문학부 교수도 "한동훈 장관 지명자 딸의 논문들이 많은 이슈를 일으킨다"면서 "몇 년 전, 조국 장관 딸과 나경원 의원 아들의 논문이 이슈가 되었을 때보다 열 배 이상 더 심각하다. 논문을 쓰는 일이 주업인 연구자로서 이번 사건에 대해 관심을 갖지 않을 수가 없다"고 밝혔다.
+ 
+우 교수는 "유학, 입시, 취직 등 뭔가 논문업적이 필요하면 약탈적 저널의 문을 두드릴 수 있다"면서 "한동훈 측은 '온라인 저널', '오픈엑세스', '고등학생의 글' 이런 표현으로 논문이 아니라는 인상을 주려고 한다. 그러나 논문임을 부정하기는 어렵고, 유학·입시 등에 스펙을 제시할 때 당연히 논문으로 포장하려고 저널에 투고해서 출판했을 거라는 게 합리적 추론"이라고 지적했다.
+ 
+그러면서 "진정한 피해자는 이 거대한 경쟁사회 속에서 부모의 스펙 지도에 휘둘리는 아이들, 그리고 그런 찬스는 꿈도 꾸지 못하는 아이들, 그리고 이 모든 과정을 지켜보며 상처를 받는 국민들"이라고 짚었다.
+ 
+이런 지적에 대해 한 후보자는 지난 9일 국회청문회 답변에서 "논문이라고 하지만, 실제 논문 수준은 아니고 고등학생의 연습용 리포트 수준의 짧은 글들"이라면서 "(언급된 논문 등은) 실제로 입시에 사용된 사실이 없고 사용될 계획도 없다. 국제학교에 제출하지도 않았다"고 해명했다.
+</pre>
+	<script type="text/javascript">
+		let posY = 0;
+		function viewScroll() {
+			window.scroll(0, posY);
+
+			posY = posY + 2;
+			if (posY == 300)
+				posY = 0;
+			setTimeout("viewScroll()", 100);
+		}
+	</script> -->
+
+<!-- 세번째 -->
+<body>
+
+	<!-- onblur: 포커스를 이동-->
+	연령:
+	<input type="text" onblur="isRegNum()" size="10" maxlength="2">세
+	<br>
+
+	<script type="text/javascript">
+		function isRegNum() {
+			alert("isRegNum() 실행!~");
+		}
+	</script>
+	<br>
+
+	<!-- onchange: 입력값이 변경되고 포커스가 이동했을 때 -->
+	우편번호:
+	<br>
+	<input type="text" id="postNum" maxlength="3" size="5"
+		onchange="isPostNum(thi)"> -
+	<input type="text" maxlength="3" size="5" onchange="isPostNum(this)">
+	<br>
+
+	<script type="text/javascript">
+		function isPostNum(obj) {
+			let str = obj.value;
+			//alert(str);
+
+			if (str.match(/[^0-9]/g)) {
+				alert("숫자가 아닌 문자가 포함되어 있습니다");
+			}
+		}
+	</script>
+
+	<br>
+	<br>
+
+	<!-- onkeydown, onkeypress -->
+	<input type="text" name="title">
+	<br>
+	<input type="text" name="title">
+
+	<script type="text/javascript">
+		document.getElementsByName("title")[0].onkeydown = function(event) {
+			console.log("keycode:" + event.keyCode);
+		}
+		document.getElementsByName("title")[1].onkeypress = function(event) {
+			console.log("keycode:" + event.keyCode);
+		}
+	</script>
+	<br>
+	<br>
+
+	<!-- onMouseDown, onMouseUp, onMouseOver -->
+
+	<input type="image" src="images/sam0.gif" onmousedown="mouseDown(this)"
+		onmouseup="mouseup(this)" onmouseover="mouseOver(this)"
+		onmouseout="mouseOut(this)">
+	<script type="text/javascript">
+		function mouseDown(obj) {
+			obj.src = "images/san1.gif";
+		}
+		function mouseup(obj) {
+			obj.src = "images/san0.gif";
+		}
+		function mouseOver(obj) {
+			obj.src = "images/san2.gif";
+		}
+		function mouseOut(obj) {
+			obj.src = "images/san0.gif";
+		}
+	</script>
+	<br>
+	<br>
+
+	<a href="#" onmouseover="document.box.src=
+		'images/surprise.gif'"
+		onmouseout="document.bos.src='images/box.gif'"> <img alt=""
+		src="images/box.gif" name="box">
+	</a>
+
+	<br>
+	<br>
+
+	<input type="button" onclick="">
+	<h1 onclick="alert('h1 태그 클릭')">h1 태그입니다</h1>
+
+</body>
+</html>
+
+
+
+

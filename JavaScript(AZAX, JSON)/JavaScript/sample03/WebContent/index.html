@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<form action="view.html">
+		입력: <input type="text" name="name"> <input type="button"
+			onclick="move()" value="이동">
+	</form>
+
+	입력:
+	<input type="text" id="name">
+	<input type='button' onclick="move()" value="이동">
+
+	<script type="text/javascript">
+		function move() {
+			let name = document.getElementById("name").value;
+			if (name.trim() == "") {
+				alert("입력해 주십시오");
+			} else {
+				location.href = "view.html";
+			}
+
+		}
+	</script>
+
+</body>
+</html>

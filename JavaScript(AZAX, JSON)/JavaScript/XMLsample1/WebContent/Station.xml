@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SebcBusStopEng>
+	<list_total_count>1743</list_total_count>
+	<RESULT>
+		<CODE>INFO-000</CODE>
+		<MESSAGE>정상 처리되었습니다</MESSAGE>
+	</RESULT>
+	<row>
+		<MAIN_KEY>BE_LiST25-0342</MAIN_KEY>
+		<MNG_NO>04-236</MNG_NO>
+		<NAME_ENG>Ttukseom Station Exit 8</NAME_ENG>
+		<H_ENG_CITY />
+		<H_ENG_GU />
+		<H_ENG_DONG />
+	</row>
+	<row>
+		<MAIN_KEY>BE_LiST25-0343</MAIN_KEY>
+		<MNG_NO>04-237</MNG_NO>
+		<NAME_ENG>Ttukseom Station Exit 1</NAME_ENG>
+		<H_ENG_CITY />
+		<H_ENG_GU />
+		<H_ENG_DONG />
+	</row>
+	<row>
+		<MAIN_KEY>BE_LiST25-0344</MAIN_KEY>
+		<MNG_NO>04-238</MNG_NO>
+		<NAME_ENG>Ttukseom Station Exit 3, 5</NAME_ENG>
+		<H_ENG_CITY />
+		<H_ENG_GU />
+		<H_ENG_DONG />
+	</row>
+	<row>
+		<MAIN_KEY>BE_LiST25-0345</MAIN_KEY>
+		<MNG_NO>04-239</MNG_NO>
+		<NAME_ENG>Ttukseom Station Exit 4</NAME_ENG>
+		<H_ENG_CITY />
+		<H_ENG_GU />
+		<H_ENG_DONG />
+	</row>
+	<row>
+		<MAIN_KEY>BE_LiST25-0346</MAIN_KEY>
+		<MNG_NO>04-240</MNG_NO>
+		<NAME_ENG>Seongsu Station</NAME_ENG>
+		<H_ENG_CITY />
+		<H_ENG_GU />
+		<H_ENG_DONG />
+	</row>
+</SebcBusStopEng>

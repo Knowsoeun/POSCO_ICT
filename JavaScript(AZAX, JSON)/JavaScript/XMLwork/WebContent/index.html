@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<!-- 
+		본인이 읽은 책
+		제목, 저자, 가격, 발행일
+		4권 -> xml 파일
+		데이터들을 읽고 시각화
+		Table 
+		
+		    제목 	저자 	가격 		발행일
+		1   배꼽 	오쏘 	12000		2001/06/12
+		2
+		3
+		4		
+ -->
+
+<div id="books">
+
+</div>
+ 
+
+<script type="text/javascript">
+
+let xhttp = new XMLHttpRequest();
+
+xhttp.onreadystatechange = function () {
+	if(this.readyState == 4 && this.status == 200){
+		xmlParse(this);
+	}
+}
+xhttp.open("GET", "books.xml", true);
+xhttp.send();
+
+function xmlParse( xml ) {
+	
+	let xmlDoc = xml.responseXML;
+	// alert(xmlDoc);
+	
+	// root 취득
+	let rootTagName = xmlDoc.documentElement.nodeName;
+	//alert(rootTagName);
+	
+	// node명을 취득
+	let nodeArr = xmlDoc.documentElement.childNodes;
+	//alert(nodeArr);
+	
+	// node list를 확인
+	let nodeName;
+	for(i = 0;i < nodeArr.length; i++){
+		if(nodeArr[i].nodeType == 1){
+			nodeName = nodeArr[i].nodeName;
+			console.log(nodeName);
+		}
+	}
+	
+	// 시각화
+	// Table
+	let out = 	"<table border='1'>";
+	out += 		"<col width='50'><col width='100'><col width='140'><col width='100'><col width='100'>";
+	out +=		"<tr>";
+	out +=		"<th>번호</th>";
+	
+	// column 명을 취득
+	columnName = xmlDoc.getElementsByTagName(nodeName)[0];
+	alert(columnName.childNodes.length);
+	
+	let child = columnName.firstChild;
+	for(i = 0;i < columnName.childNodes.length; i++){
+		if(child.nodeType == 1){
+			out += "<th>" + child.nodeName + "</th>";
+		}
+		child = child.nextSibling;
+	}
+	out += "</tr>";
+	
+	// data 출력
+	let len = xmlDoc.getElementsByTagName(nodeName).length;
+	alert(len);
+	
+	for(i = 0;i < len; i++){
+		out += "<tr>";
+		out += "<th>" + (i + 1) + "</th>";
+		
+		let dataArr = xmlDoc.getElementsByTagName(nodeName)[i];
+		
+		child = dataArr.firstChild;
+		for (j = 0; j < dataArr.childNodes.length; j++) {
+			if(child.nodeType == 1){
+				out += "<td>" + child.childNodes[0].nodeValue + "</td>";
+			}
+			child = child.nextSibling;
+		}
+		
+		out += "</tr>";
+	}
+	
+	out += "</table>";
+	
+	document.getElementById("books").innerHTML = out;
+	
+}
+
+</script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
