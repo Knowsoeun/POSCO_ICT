@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<div id="books">
+</div>
+
+<script type="text/javascript">
+
+let xhttp = new XMLHttpRequest();
+
+xhttp.onreadystatechange = function () {
+	if(this.readyState == 4 && this.status == 200){
+		jsonParse(this);	
+	}
+}
+xhttp.open("GET", "books.json", true);
+xhttp.send();
+
+function jsonParse( resp ) {
+	let jsonDoc = resp.responseText;
+	let json = JSON.parse(jsonDoc);
+	alert(json);
+	
+	let out = "<table border='1'>";
+	
+	out += "<col width='50'><col width='100'><col width='140'><col width='100'><col width='100'>"
+	
+	out += "<tr>";
+	out += "<th>번호</th>";
+	for(k in json[0]){
+		out += "<th>" + k + "</th>";
+	}	
+	out += "</tr>";
+	
+	// data
+	for (var i = 0; i < json.length; i++) {
+		out += "<tr>";
+		out += "<th>" + (i + 1) + "</th>";
+		
+		out += "<td>" + json[i].title + "</td>";
+		out += "<td>" + json[i].author + "</td>";
+		out += "<td>" + json[i].price + "</td>";
+		out += "<td>" + json[i].date + "</td>";		
+		
+		out += "</tr>";
+	}	
+	
+	out += "</table>";
+	
+	document.getElementById("books").innerHTML = out;
+}
+
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
