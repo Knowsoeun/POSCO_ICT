@@ -9,7 +9,7 @@ This is an android application for audience who likes to watch movies in theater
 4. You can check other people's reviews and manage own reviews.-->
 
 ## Contents
-- [Study](https://github.com/Knowsoeun/POSCO_ICT/tree/main/%EC%8A%A4%ED%84%B0%EB%94%94)
+- [Toy Project](https://github.com/Knowsoeun/POSCO_ICT/tree/main/%EC%8A%A4%ED%84%B0%EB%94%94)
 ### Lecture & Practice
 - [Java Programming](https://github.com/Knowsoeun/POSCO_ICT/tree/main/JAVA%20Programming)
 - [Java Data Structure](https://github.com/Knowsoeun/POSCO_ICT/tree/main/JAVA%20Data%20Structure)
