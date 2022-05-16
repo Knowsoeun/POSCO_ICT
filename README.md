@@ -33,6 +33,7 @@ This is an android application for audience who likes to watch movies in theater
 - Apache Server 9.0
 - 
 ## Preview
+![슬라이드1](https://user-images.githubusercontent.com/63652571/168503155-0c3979d3-11b6-448b-a38f-283413b2608f.JPG)
 ![0504](https://user-images.githubusercontent.com/63652571/168500865-2bd0f5a7-b09e-44a4-8eb9-9f144c5e5fa8.jpg)
 
 
