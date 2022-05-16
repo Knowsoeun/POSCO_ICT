@@ -31,6 +31,10 @@ This is an android application for audience who likes to watch movies in theater
 - Eclipse, intellij
 - MySQL
 - Apache Server 9.0
+- 
+## Preview
+![0504](https://user-images.githubusercontent.com/63652571/168500865-2bd0f5a7-b09e-44a4-8eb9-9f144c5e5fa8.jpg)
+
 
 <!--## Application Version
 - minSdkVersion : 15
