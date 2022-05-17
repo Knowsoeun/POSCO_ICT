@@ -28,7 +28,7 @@ This is an android application for audience who likes to watch movies in theater
 ### Pilot Project  
 
 ## Development Environment
-- Eclipse, intellij
+- Eclipse, intellij (Font: Microsoft PhagsPa-12)
 - MySQL
 - Apache Server 9.0
 - 
