@@ -14,7 +14,7 @@ This is an android application for audience who likes to watch movies in theater
 - [Java Data Structure](https://github.com/Knowsoeun/POSCO_ICT/tree/main/JAVA%20Data%20Structure)
 - [My SQL](https://github.com/Knowsoeun/POSCO_ICT/tree/main/MySQL)
 - [Mongo DB](https://github.com/Knowsoeun/POSCO_ICT/tree/main/MogoDB)
-- [HTML5/CSS](https://github.com/Knowsoeun/POSCO_ICT/tree/main/HTML5%2C%20CSS)
+- [HTML5/CSS](https://github.com/Knowsoeun/POSCO_ICT/tree/main/HTML5%2C%20CSS)　　+[참고](https://github.com/Knowsoeun/POSCO_ICT/blob/main/JavaScript(AZAX%2C%20JSON)/%EC%9D%B4%EB%A1%A0%20%EC%A0%95%EB%A6%AC.md)
 - [JS, AJAX/JSON](https://github.com/Knowsoeun/POSCO_ICT/tree/main/JavaScript(AZAX%2C%20JSON))
 - [Serlvet/JSP](https://github.com/Knowsoeun/POSCO_ICT/tree/main/Serlvet%2C%20JSP)
 - [Node.js(Express.js)](https://github.com/Knowsoeun/POSCO_ICT/tree/main/Node.js(Express.js))
