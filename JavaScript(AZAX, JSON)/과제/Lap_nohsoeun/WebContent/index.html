@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Jua');
+
+html, body {
+	height: 100%;
+}
+
+body {
+	background: radial-gradient(ellipse at center, rgba(255, 254, 234, 1) 0%,
+		rgba(255, 254, 234, 1) 35%, #B7E8EB 100%);
+	overflow: hidden;
+}
+
+.ocean {
+	height: 5%;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: #015871;
+}
+
+.wave {
+	background:
+		url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg)
+		repeat-x;
+	position: absolute;
+	top: -198px;
+	width: 6400px;
+	height: 198px;
+	animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+	transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+	top: -175px;
+	animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -.125s infinite,
+		swell 7s ease -1.25s infinite;
+	opacity: 1;
+}
+
+@keyframes wave { 0% {
+	margin-left: 0;
+}
+
+100%
+{
+margin-left:
+-1600px;}
+}
+
+@keyframes swell { 0%, 100% {
+	transform: translate3d(0, -25px, 0);
+}
+
+50%
+{
+transform:
+translate3d(0,
+5px,0);}
+}
+p {
+	font-family: 'Jua';
+	font-size: 24px;
+}
+
+    
+span {
+	font-family: 'Jua';
+	font-size: 24px;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 50%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 50%;
+  }
+}
+
+.dd{
+animation-duration: 30s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.text-box h1 { font-family: 'Staatliches', cursive; font-size: 6em; text-align: center; color: #6cc3d9; text-shadow: 5px 5px #16345A, 8px 8px #284D8E, 11px 11px #4D8CBF, 14px 14px #5FA9D9; margin: 0; }
+
+
+</style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+	<div class="container">
+		<div class="ocean">
+			<div class="wave"></div>
+			<div class="wave"></div>
+		</div>
+		  <img class="dd" src="image/image2.png"></img>
+		<div class="text-box"><h1>Days You've Lived Program</h1></div>
+		<br>
+		<br>
+		<br>
+		<br>
+			<center>
+				<p>생일을 입력하세요.</p>
+				<br>
+				<p>
+					<input size="10" id="year" required/>년 <input id="month" size="5">월
+					<input id="day" size="5">일
+				</p>
+				<br />
+				<button class="btn btn-default btn-lg"
+					onclick="survivalCalc()">계산하기</button><br>
+				<br> <span>지금까지 당신이 살아온 날 수는</span> <span id="survival" style="color:red" >
+					?</span> <span>일 입니다.</span>
+			</center>
+	</div>
+	<script type="text/javascript">
+  function survivalCalc(){
+	  if($("#year").val().trim() == ""){
+			alert('태어난 연도를 입력해 주십시오');
+		}
+		else if($("#month").val() == ""){
+			alert('태어난 달을 입력해 주십시오');
+		}
+		else if($("#day").val() == ""){
+			alert('태어난 일을 입력해 주십시오');
+		}
+	  
+    var today = new Date(); 
+    var both_year = parseInt(document.getElementById("year").value); 
+    var both_month = parseInt(document.getElementById("month").value); 
+    var both_day = parseInt(document.getElementById("day").value); 
+    var myBoth = new Date(); 
+    
+    myBoth.setFullYear(both_year, both_month, both_day);
+    today_Mili = Date.parse(today);
+    both_Mili = Date.parse(myBoth);
+    survival_Mili = today_Mili - both_Mili; 
+    survival_Day = survival_Mili/1000/60/60/24;
+    document.getElementById("survival").innerHTML = parseInt(survival_Day); 
+  }
+
+</script>
+
+</body>
+</html>
