@@ -1,5 +1,5 @@
 ## Duration
-120 days (2022.4.11 - 2022.10.07)
+120 days (2022.4.11 - 2022.10.07) 
 
 <!--## Introduction
 This is an android application for audience who likes to watch movies in theaters.
