@@ -5,7 +5,9 @@ show databases;
 drop table bbs;
 drop table member;
 
+
 USE bbs;
+-- bbs 안에 MEMBER 테이블 생성
 create table MEMBER(
 ID VARCHAR(20) PRIMARY KEY NOT NULL,
 PWD VARCHAR(20) NOT NULL,
@@ -16,22 +18,15 @@ ADDRESS VARCHAR(100) NOT NULL,
 HEIGHT VARCHAR(20) NOT NULL
 );
 
-show databases;
+-- DB에 mydb 생성
 CREATE DATABASE mydb;
-USE mydb;
 
-create table tablesample(
-id varchar(50),
-name varchar(50)
-);
-
+-- 데이터 삽입
 insert into tablesample(id, name)
 values('abc', '홍길동');
 
+-- node.js와 연결
 alter user 'root'@'localhost' identified with mysql_native_password by 'gi6271cy';
-
 select * from tablesample;
-
 select host, user from mysql.user;
-
 create user 'root'@'%' identified by 'gi6271cy';
