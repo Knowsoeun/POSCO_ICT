@@ -17,7 +17,7 @@ This is an android application for audience who likes to watch movies in theater
 - [HTML5/CSS](https://github.com/Knowsoeun/POSCO_ICT/tree/main/HTML5%2C%20CSS)　　+[참고](https://github.com/Knowsoeun/POSCO_ICT/blob/main/JavaScript(AZAX%2C%20JSON)/%EC%9D%B4%EB%A1%A0%20%EC%A0%95%EB%A6%AC.md)
 - [JS, AJAX/JSON](https://github.com/Knowsoeun/POSCO_ICT/tree/main/JavaScript(AZAX%2C%20JSON))　  
 - [Serlvet/JSP](https://github.com/Knowsoeun/POSCO_ICT/tree/main/Serlvet%2C%20JSP)　　+[웹 백앤드 총정리 프로젝트](https://github.com/Knowsoeun/POSCO_ICT/tree/main/Serlvet%2C%20JSP/%EC%9B%B9_%EB%B0%B1%EC%95%A4%EB%93%9C)
-- [Node.js(Express.js)](https://github.com/Knowsoeun/POSCO_ICT/tree/main/Node.js(Express.js))
+- [Node.js(Express.js)](https://github.com/Knowsoeun/POSCO_ICT/tree/main/Node.js(Express.js)) +[Mysql과 DB연결](https://github.com/Knowsoeun/POSCO_ICT/blob/main/Node.js(Express.js)/Mysql_DB%EA%B8%B0%EB%B3%B8.sql)  
 - [Spring Framework]()
 - [React]()
 - [Mobile Programming]()  
