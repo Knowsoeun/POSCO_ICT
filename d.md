@@ -12,7 +12,6 @@
 - 다음과 같이 바꿔 쓸 수 있다.
 ```js
 class ProductCategoryRow =(props)=> {
-  //class ProductCategoryRow extends React.Component {
     const category = props.category;
     return (
       <tr>
