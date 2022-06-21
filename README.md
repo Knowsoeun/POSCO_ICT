@@ -21,7 +21,7 @@ This is an android application for audience who likes to watch movies in theater
 - [Spring Framework](https://github.com/Knowsoeun/POSCO_ICT/tree/main/Spring/Framework)
 - [Spring Boot](https://github.com/Knowsoeun/POSCO_ICT/tree/main/Spring/Boot)
 - [React](https://github.com/Knowsoeun/POSCO_ICT/tree/main/React)　　+[실습](https://github.com/Knowsoeun/React_)
-- [Mobile Programming](https://github.com/Knowsoeun/POSCO_ICT/tree/main/ReactNetive)  
+- [Mobile Programming(React Native)](https://github.com/Knowsoeun/POSCO_ICT/tree/main/ReactNative)
 　
 - [Toy Project](https://github.com/Knowsoeun/POSCO_ICT/tree/main/%EC%8A%A4%ED%84%B0%EB%94%94)
 
