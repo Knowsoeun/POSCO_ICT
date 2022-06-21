@@ -1,5 +1,6 @@
 ### React Native 환경설정
 ####  # Code, MS SQL, Android Studio 사용
+https://reactnavigation.org
 - Expo란?   
 -JavaScript나 TypeScript로 iOS,Android,Web 앱을 개발할 수 있는 프레임워크이자 플랫폼  
 
