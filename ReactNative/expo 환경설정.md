@@ -7,7 +7,7 @@
 #### 1. 설치
 먼저 cd로 경로 설정 잘 했는지 확인하기  
 ```npm install -g expo-cli```   
-```expo init []```   
+```expo init [프로젝트명]```   
 ```npm start```   
 
 #### 2. Android Studio에서 Expo 실행하는 법
