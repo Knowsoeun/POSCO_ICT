@@ -1,0 +1,15 @@
+
+
+server:
+  port: 9001
+
+spring:
+  application:
+    name: discovery-client2
+eureka:
+  client:
+    #    axios ?????? true
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://192.168.0.62:8761/eureka
